@@ -1,0 +1,13 @@
+- name: test
+  user: danieln
+  hosts: localhost
+  tasks:
+    - name: test writing a file
+      copy:
+        content: |
+          blabla
+          bloblo
+          blibli
+          bleble
+          blublu
+        dest: /tmp/test.txt
